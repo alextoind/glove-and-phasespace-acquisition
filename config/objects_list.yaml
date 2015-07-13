@@ -1,0 +1,26 @@
+#  The YAML file follows this structure:
+#  items:
+#     item_1: {field_1, field_2, ..., field_M}
+#     item_2: {field_1, field_2, ..., field_M}
+#     ...
+#     item_N: {field_1, field_2, ..., field_M}
+
+items:
+  tennis_ball: {
+    size: 5,
+    directions: [
+      "vertical_distal_finger1",
+      "vertical_distal_finger2",
+      "vertical_distal_finger3",
+      "vertical_distal_finger4",
+      "vertical_distal_finger5",
+      "horizontal_frontal_finger1",
+      "horizontal_frontal_finger2",
+      "horizontal_frontal_finger3",
+      "horizontal_frontal_finger4",
+      "horizontal_frontal_finger5",
+      "horizontal_side_distal_finger1",
+      "horizontal_side_distal_finger2",
+      "horizontal_side_distal_finger5",
+    ]
+  }

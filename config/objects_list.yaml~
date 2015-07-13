@@ -1,0 +1,27 @@
+items:
+  tennis_ball: {
+    size: 5,
+    directions: [
+      "vertical_distal_finger1",
+      "vertical_distal_finger2",
+      "vertical_distal_finger3",
+      "vertical_distal_finger4",
+      "vertical_distal_finger5",
+      # "vertical_proximal_finger1",
+      # "vertical_proximal_finger2",
+      # "vertical_proximal_finger3",
+      # "vertical_proximal_finger4",
+      # "vertical_proximal_finger5",
+      "horizontal_frontal_finger1",
+      "horizontal_frontal_finger2",
+      "horizontal_frontal_finger3",
+      "horizontal_frontal_finger4",
+      "horizontal_frontal_finger5",
+      "horizontal_side_distal_finger1",
+      # "horizontal_side_proximal_finger1",
+      "horizontal_side_distal_finger2",
+      # "horizontal_side_proximal_finger2",
+      "horizontal_side_distal_finger5",
+      # "horizontal_side_proximal_finger5"
+    ]
+  }

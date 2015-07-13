@@ -1,0 +1,23 @@
+<launch>
+  <env name="ROSCONSOLE_CONFIG_FILE" value="$(find glove_and_phasespace_acquisition)/config/rosconsole_debug_enabled.conf" />
+
+  <rosparam command="load" file="$(find glove_and_phasespace_acquisition)/config/objects_list.yaml" />
+
+  <!-- choose whether or not to enable the verbose mode -->
+  <arg name="verbose_mode" default="false"/>
+
+  <include file="$(find glove_acquisition)/launch/glove_publisher.launch">
+    <arg name="glove_pub_verbose_mode" value="$(arg verbose_mode)"/>
+  </include>
+
+  <include file="$(find phasespace_acquisition)/launch/phasespace_publisher.launch">
+    <arg name="phasespace_pub_verbose_mode" value="$(arg verbose_mode)"/>
+  </include>
+
+  <node pkg="glove_and_phasespace_acquisition" type="random_objects_listener" name="random_objects_listener" output="screen" cwd="ROS_HOME">
+    <param name="subject_name" type="str" value="test" />
+    <param name="experiment" type="str" value="reactive_grasping" />
+    <param name="start_time" type="double" value="5" />
+    <param name="stop_time" type="double" value="15" />
+  </node>
+</launch>
