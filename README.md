@@ -16,6 +16,7 @@ This package provides no standalone nodes: both the *major_listener* and the *ra
 
 ## Info and Warnings
 
+- This package contains two submodules: use the `--recursive` flag with the `git clone` command.
 - The *Subject* class uses linux-specific commands, e.g. `system("mkdir -p ...")`. 
 - This code has been developed for ROS Indigo on ubuntu 14.04. No warranty for other distributions.
 
